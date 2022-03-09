@@ -1,0 +1,113 @@
+[
+    {
+        "name": "outbound|80||frontend.online-boutique.svc.cluster.local",
+        "addedViaApi": true,
+        "hostStatuses": [
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "172.17.0.19",
+                        "portValue": 8080
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "name": "cx_total"
+                    },
+                    {
+                        "name": "rq_error"
+                    },
+                    {
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1,
+                "locality": {}
+            },
+            {
+                "address": {
+                    "socketAddress": {
+                        "address": "172.17.0.7",
+                        "portValue": 8080
+                    }
+                },
+                "stats": [
+                    {
+                        "name": "cx_connect_fail"
+                    },
+                    {
+                        "value": "8",
+                        "name": "cx_total"
+                    },
+                    {
+                        "value": "2",
+                        "name": "rq_error"
+                    },
+                    {
+                        "value": "16",
+                        "name": "rq_success"
+                    },
+                    {
+                        "name": "rq_timeout"
+                    },
+                    {
+                        "value": "19",
+                        "name": "rq_total"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "value": "7",
+                        "name": "cx_active"
+                    },
+                    {
+                        "type": "GAUGE",
+                        "name": "rq_active"
+                    }
+                ],
+                "healthStatus": {
+                    "edsHealthStatus": "HEALTHY"
+                },
+                "weight": 1,
+                "locality": {}
+            }
+        ],
+        "circuitBreakers": {
+            "thresholds": [
+                {
+                    "maxConnections": 4294967295,
+                    "maxPendingRequests": 4294967295,
+                    "maxRequests": 4294967295,
+                    "maxRetries": 4294967295
+                },
+                {
+                    "priority": "HIGH",
+                    "maxConnections": 1024,
+                    "maxPendingRequests": 1024,
+                    "maxRequests": 1024,
+                    "maxRetries": 3
+                }
+            ]
+        },
+        "observabilityName": "outbound|80||frontend.online-boutique.svc.cluster.local"
+    }
+]
